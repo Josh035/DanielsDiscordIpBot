@@ -1,5 +1,5 @@
 bot starten:
-    im veryeichnis von der compose.yml -> docker compose up --build
+    im verzeichnis von der compose.yml -> docker compose up --build
     
 bot stoppen:
     strg + c spammen wie ein depp
