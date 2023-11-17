@@ -15,6 +15,7 @@ async def on_ready():
 
 @bot.command(name=IP_CMD)
 async def test(ctx):
-    await ctx.send(ip.get())
+    output = "ddosed ip " + str(ip.get()) + " (jeff bezos's mom)"
+    await ctx.send(output)
 
 bot.run(TOKEN)
