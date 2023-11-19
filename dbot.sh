@@ -5,8 +5,8 @@ BOT_TOKEN = "[TOKEN HERE]"
 
 ##### PREREQUISITE
 
-apt update && apt upgrade -y
-apt install -y git
+sudo apt update && apt upgrade -y
+sudo apt install -y git
 
 
 ##### DOCKER INSTALL
@@ -27,8 +27,8 @@ sudo apt-get update
 
 
 ##### BOT INSTALL
-git clone "https://github.com/Josh035/DanielsDiscordIpBot.git" ~/dev/
-sed s/INSERT_TOKEN_HERE/$BOT_TOKEN/ -i ~/dev/DanielsDiscordIpBot/Dockerfile
+git clone "https://github.com/Josh035/DanielsDiscordIpBot.git" ~/dev/ipBot/
+sed s/INSERT_TOKEN_HERE/$BOT_TOKEN/ -i ~/dev/ipBot/Dockerfile
 
 ### remove "-d" flag to add console logging
-docker compose -d -f ~/dev/DanielsDiscordIpBot/compose.yml up
+docker compose -d -f ~/dev/ipBot/compose.yml up
